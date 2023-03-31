@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 90%;
+    height: 100%;
+    margin: 10px auto;
+}
+h2{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.container{
+    position: relative;
+    height: auto;
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 30px;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+.form-group label{
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+.form-group input{
+    height: 35px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.form-group select{
+    height: 35px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+.form-group .radio-group{
+    display: flex;
+    align-items: center;
+}
+.form-group .radio-group label{
+    font-size: 18px;
+    margin-right: 20px;
+}
+.form-group .radio-group input{
+    margin-right: 10px;
+}
+.form-group .checkbox-group{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.form-group .checkbox-group label{
+    font-size: 18px;
+    margin-right: 20px;
+    
+}
+.form-group .checkbox-group input{
+    margin-right: 10px;
+}
+button[type="submit"]{
+    display: block;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+

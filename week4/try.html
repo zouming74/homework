@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>个人信息收集表</title>
+    <link rel="stylesheet" type="text/css" href="../week4/css/try1.css">
+</head>
+<body>
+    <div class="container">
+        <h2>个人信息收集表</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">姓名：</label>
+                <input type="text" id="name" name="name" class="ipt top1 col1" placeholder="请输入姓名" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">性别：</label>
+                <div class="radio-container">
+                    <label for="male">
+                        <input type="radio" id="male" name="gender" value="male" required>男
+                    </label>
+                    <label for="female">
+                        <input type="radio" id="female" name="gender" value="female">女
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="birthday">出生日期：</label>
+                <input type="date" id="birthday" name="birthday" class="ipt top2 col1" required>
+            </div>
+            <div class="form-group">
+                <label for="hometown">户籍：</label>
+                <input type="text" id="hometown" name="hometown" class="ipt top3 col1" placeholder="请输入户籍" required maxlength="30">
+            </div>
+            <div class="form-group">
+                <label for="height">身高：</label>
+                <input type="text" id="height" name="height" class="ipt top4 col1" placeholder="请输入身高" required max="200" min="150">
+            </div>
+            <div class="form-group">
+                <label for="orientation">性取向：</label>
+                <div class="radio-container">
+                    <label for="heterosexual">
+                        <input type="checkbox" id="heterosexual" name="orientation" value="heterosexual" required>男
+                    </label>
+                    <label for="homosexual">
+                        <input type="checkbox" id="homosexual" name="orientation" value="homosexual">女
+                    </label>
+                    <label for="bisexual">
+                        <input type="checkbox" id="bisexual" name="orientation" value="bisexual">变性人
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="提交" class="btn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

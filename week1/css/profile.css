@@ -1,0 +1,23 @@
+body{
+    width: 80%;
+    height: auto;
+    margin:0 auto;
+    border: 1px solid black;
+}
+h3{
+    text-align: center;
+}
+.img{
+    height: auto;
+    width: auto;
+    /* position:absolute; */
+}
+.container{
+    height: auto;
+    border: 1px solid green;
+    position: relative;
+}
+.p1{
+    font-size: 24px;
+    position: absolute;
+}

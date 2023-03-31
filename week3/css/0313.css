@@ -1,0 +1,47 @@
+body{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid black;
+    /* position: relative; */
+}
+
+h2{
+    text-align: center;
+    color: blue;
+}
+.container{
+    position: relative;
+    height: 1600px;
+    border: 1px solid green;
+    
+}
+.p{
+    font-size: 26px;
+}
+.sp{
+    color: blue;
+    font-size: 24px;
+}
+.sp1{
+    position: relative;
+    left: 200px;
+    /* 相对于原来文档流的位置 */
+    /* 保留原来的位置，在文档流中浮起来了 */
+}
+.img{
+    width: auto;
+    height: auto;
+}
+.img5{
+    left: 200px;
+}
+.div2{
+    /* position: absolute; */
+    position: relative;
+    /* 绝对定位会删除原来的位置 */
+    /* 找到最近的父元素，然后在最左上角的定位点 */
+    /* 父元素相对定位，子元素绝对定位 */
+    height: 240px;
+    border: 1px solid green;
+}

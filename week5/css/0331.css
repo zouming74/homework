@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 90%;
+    height: 650px;
+    margin: 10px auto;
+
+}
+h2{
+    text-align: center;
+    /* color: rgb(255,0,0,0.2); */
+    color: #54ff0085;
+    /* 最后一个表示透明度 */
+}
+.container{
+    position: relative;
+    height: 600px;
+    border: 1px solid #54ff0085;
+    /* background-color: blue; */
+}
+.btn{
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    background-color: aquamarine;
+    left: 200px;
+    top: 10px;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 5px;
+}
+.se1{
+    position: absolute;
+    left: 200px;
+    top:100px;
+    width: 200px;
+    height: 20px;
+
+}
+.mydiv{
+    position:absolute;
+    width: 500px;
+    height: 200px;
+    left: 30%;
+    border: 5px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.mydiv .img{
+    height: 100%;
+    width: 100%;
+}
+
+.img{
+    /* border-radius: 50%; */
+}

@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+body{
+    width: 1000px;
+    height: 1000px;
+    margin: 10px auto;
+    /* border: 1px solid green; */
+}
+h2{
+    text-align: center;
+    color: blue;
+}
+.wall{
+    width: 100%;
+    height: 1000px;
+    border: 10px solid rosybrown;
+    /* background-color: lightgray; */
+    /* background: url('../../Imgs/tenpics/wall.jfif') no-repeat 100%/100%; */
+    /* background: url('../../Imgs/tenpics/wall.jfif')repeat-x; */
+    /* background: url('../../Imgs/tenpics/wall.jfif')repeat-y; */
+    background: url('../../Imgs/tenpics/wall.jfif');
+    position: relative;
+    overflow: hidden;
+}
+img{
+    position: absolute;
+    padding: 10px 10px 15px 10px;
+    background-color: white;
+}
+.pic1{
+    /* position:absolute; */
+    height: 200px;
+    width: 200px;
+    left:75px;
+    top:50px;
+    /* padding: 10px 10px 15px 10px; */
+    /* 上右下左 */
+    /* background-color: white; */
+    transform: rotate(25deg);
+    transition: all 1s ease-in;
+}
+.pic2{
+    /* position:absolute; */
+    height: 200px;
+    width: 200px;
+    left:450px;
+    top:50px;
+    /* padding: 10px 10px 15px 10px; */
+    /* 上右下左 */
+    /* background-color: white; */
+    transform: rotate(-15deg);
+    transition: all 1s ease-out;
+}
+.pic3{
+    height: 200px;
+    width: 200px;
+    left:750px;
+    top:50px;
+    transform: rotate(25deg);
+    transition: all 1s ease-in;
+}
+.pic4{
+    height: 200px;
+    width: 200px;
+    left: 460px;
+    top:300px;
+    transform: rotate(25deg);
+    transition: all 1s ease-in;
+}
+.pic5{
+    height: 200px;
+    width: 200px;
+    left:750px;
+    top:400px;
+    transform: rotate(-15deg);
+    transition: all 1s ease-in;
+}
+.pic6{
+    height: 200px;
+    width: 200px;
+    left:100px;
+    top:300px;
+    transform: rotate(-15deg);
+    transition: all 1s ease-in;
+}
+.pic7{
+    height: 200px;
+    width: 200px;
+    left:100px;
+    top:500px;
+    transform: rotate(25deg);
+    transition: all 1s ease-in;
+}
+.pic8{
+    height: 200px;
+    width: 200px;
+    left:100px;
+    top:700px;
+    transform: rotate(-25deg);
+    transition: all 1s ease-in;
+}
+.pic9{
+    height: 200px;
+    width: 200px;
+    left:460px;
+    top:600px;
+    transform: rotate(25deg);
+    transition: all 1s ease-in;
+}
+.pic10{
+    height: 200px;
+    width: 200px;
+    left:750px;
+    top:650px;
+    transform: rotate(25deg);
+    transition: all 1s ease-in;
+}
+
+
+/* .pic1:hover{
+    transform: rotate(0) scale(1.2);
+}
+.pic2:hover{
+    transform: rotate(0) scale(1.2);
+} */
+img:hover{
+    transform: rotate(0) scale(1.2);
+    z-index: 1;
+}
