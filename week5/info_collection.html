@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../week5/css/info.css">
+    <script src="../week5/js/info.js"></script>
+    <title>旅游信息收集表</title>
+</head>
+<body class="light-mode">
+    <h2>旅游信息收集表</h2>
+    <div class="container">
+        <form>
+            <input type="text" class="ipt top1 col11" maxlength="20" placeholder="请输入">
+            <input type="radio" class="ipt top2 col22" name="sex">
+            <input type="radio" class="ipt top2 col33" name="sex">
+            <input type="radio" class="ipt top2 col44" name="sex">
+            <input type="number" class="ipt top3 col11" min="12" max="99" placeholder="请输入">
+            <input type="text" class="ipt top4 col11" id="idcard" maxlength="18" placeholder="请输入" onblur="checkPid(this.value);">
+            <!-- <input type="text" class="ipt top5 col1">
+            <input type="text" class="ipt top5 col4"> -->
+            <!-- <input type="text" class="ipt top6 col1"> -->
+            <input type="datetime-local" class="ipt top6 col4">
+            <input type="submit" class="ipt top7 center">
+
+            <label for="" class="lb top1 col1">姓名</label>
+            <label for="" class="lb  top2 col1">性别</label>
+            <label for="" class="lb top2 col2">男</label>
+            <label for="" class="lb top2 col3">女</label>
+            <label for="" class="lb top2 col4">不愿透露</label>
+            <label for="" class="lb top3 col1">年龄</label>
+            <label for="" class="lb top4 col1">身份证</label>
+            <label for="" class="lb top5 col0">始发地</label>
+            <label for="" class="lb top5 col3">终点</label>
+            <label for="" class="lb top6 col0">交通工具</label>
+            <label for="" class="lb top6 col3">出发时间</label>
+            
+            <select name="" id="" class="se1">
+                <option value="" class="opt">--请选择--</option>
+                <option value="" class="opt">成都东站</option>
+                <option value="" class="opt">成都北站</option>
+                <option value="" class="opt">成都汽车站</option>
+            </select>
+            <select name="" id="" class="se2">
+                <option value="" class="opt">--请选择--</option>
+                <option value="" class="opt">乐山</option>
+                <option value="" class="opt">峨眉山</option>
+                <option value="" class="opt">青城山</option>
+                <option value="" class="opt">都江堰</option>
+                <option value="" class="opt">理塘</option>
+            </select>
+            <select name="" id="" class="se3">
+                <option value="" class="opt">--请选择--</option>
+                <option value="" class="opt">高铁</option>
+                <option value="" class="opt">火车</option>
+                <option value="" class="opt">飞机</option>
+                <option value="" class="opt">轮船</option>
+                <option value="" class="opt">汽车</option>
+                <option value="" class="opt">地铁</option>
+                <option value="" class="opt">步行</option>
+            </select>
+
+            <i class="alarm">身份证错误，请核对</i>
+
+            <!-- <button onclick="toggleDarkMode()" class="btn1">夜间模式</button>
+            <button onclick="toggleLightMode()" class="btn2">白天模式</button> -->
+            
+        </form>
+        
+    </div>
+    <button id="mode-switcher" class="btn" onclick="toggleDarkMode();toggleLightMode()">Switch to Dark Mode</button>
+</body>
+</html>
