@@ -22,7 +22,7 @@
             <input type="text" class="ipt top5 col4"> -->
             <!-- <input type="text" class="ipt top6 col1"> -->
             <input type="datetime-local" class="ipt top6 col4">
-            <input type="submit" class="ipt top7 center">
+            <input type="submit" class="ipt top7 center submitBtn" id="submitBtn" onclick="submitForm();">
 
             <label for="" class="lb top1 col1">姓名</label>
             <label for="" class="lb  top2 col1">性别</label>
@@ -37,38 +37,42 @@
             <label for="" class="lb top6 col3">出发时间</label>
             
             <select name="" id="" class="se1">
-                <option value="" class="opt">--请选择--</option>
-                <option value="" class="opt">成都东站</option>
-                <option value="" class="opt">成都北站</option>
-                <option value="" class="opt">成都汽车站</option>
+                <option value="A" class="opt">--请选择--</option>
+                <option value="B" class="opt">成都东站</option> 
+                <option value="C" class="opt">成都北站</option>
+                <option value="D" class="opt">成都汽车站</option>
             </select>
             <select name="" id="" class="se2">
-                <option value="" class="opt">--请选择--</option>
-                <option value="" class="opt">乐山</option>
-                <option value="" class="opt">峨眉山</option>
-                <option value="" class="opt">青城山</option>
-                <option value="" class="opt">都江堰</option>
-                <option value="" class="opt">理塘</option>
+                <option value="E" class="opt">--请选择--</option>
+                <option value="F" class="opt">乐山</option>
+                <option value="G" class="opt">峨眉山</option>
+                <option value="H" class="opt">青城山</option>
+                <option value="I" class="opt">都江堰</option>
+                <option value="J" class="opt">理塘</option>
             </select>
             <select name="" id="" class="se3">
-                <option value="" class="opt">--请选择--</option>
-                <option value="" class="opt">高铁</option>
-                <option value="" class="opt">火车</option>
-                <option value="" class="opt">飞机</option>
-                <option value="" class="opt">轮船</option>
-                <option value="" class="opt">汽车</option>
-                <option value="" class="opt">地铁</option>
-                <option value="" class="opt">步行</option>
+                <option value="K" class="opt">--请选择--</option>
+                <option value="L" class="opt">高铁</option>
+                <option value="M" class="opt">火车</option>
+                <option value="N" class="opt">飞机</option>
+                <option value="O" class="opt">轮船</option>
+                <option value="P" class="opt">汽车</option>
+                <option value="Q" class="opt">地铁</option>
+                <option value="R" class="opt">步行</option>
             </select>
 
             <i class="alarm">身份证错误，请核对</i>
 
             <!-- <button onclick="toggleDarkMode()" class="btn1">夜间模式</button>
             <button onclick="toggleLightMode()" class="btn2">白天模式</button> -->
+            <div class="pic">
+                <!-- <img src="../Imgs/panda1.jpg" class="img"> -->
+            </div>
             
         </form>
         
     </div>
     <button id="mode-switcher" class="btn" onclick="toggleDarkMode();toggleLightMode()">Switch to Dark Mode</button>
+   
 </body>
 </html>

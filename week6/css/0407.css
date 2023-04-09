@@ -1,0 +1,65 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+    border: 1px solid gray;
+}
+h2{
+    text-align: center;
+    position: fixed;
+    left: 45%;
+}
+#div1{
+    position: relative;
+    left: 40%;
+    top: 20%;
+    width: 124px;
+    height: 120px;
+    border: 2px solid green;
+    background:url('../../Imgs/panda1.jpg');
+    background-position: -180px -60px;
+}
+.toolbar{
+    position: fixed;
+    width: 52px;
+    height: 202px;
+    border: 1px solid #707070;
+    bottom: 50px;
+    right: 20px;
+}
+.toolbar-item{
+    display: block;
+    width: 100%;
+    height: 52px;
+    background: url("../../Imgs/头像.jpg") no-repeat;
+    margin-top:1px ;
+    transition: all 1s ease;
+}
+.toolbar-item-1{
+    background-position: 0 -798px;
+}
+.toolbar-item-1:hover{
+    background-position: 0 -55px;
+}
+.toolbar-item-2{
+    background-position: 0 -798px;
+}
+.toolbar-item-2:hover{
+    background-position: 0 -798px;
+}
+.toolbar-item-3{
+    background-position: 0 -798px;
+}
+.toolbar-item-3:hover{
+    background-position: 0 -798px;
+}
+.toolbar-item-4{
+    background-position: 0 -798px;
+}
+.toolbar-item-4:hover{
+    background-position: 0 -798px;
+}

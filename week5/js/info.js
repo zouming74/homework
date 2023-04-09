@@ -47,4 +47,8 @@ function toggleDarkMode() {
       modeSwitcher.textContent = 'Switch to Light Mode';
     }
   });
-  
+ 
+  function submitForm() {
+    // 这里可以添加提交表单的代码，例如向服务器发送请求等
+    alert("信息已提交"); // 弹出提示信息
+  }
