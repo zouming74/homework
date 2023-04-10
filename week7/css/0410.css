@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 80%;
+    height: 800px;
+    width: auto;
+
+}
+h2{
+    text-align: center;
+}
+h3{
+    color: aqua;
+}
+marquee{
+    position: absolute;
+    /* height: 500px; */
+}
+.mar{
+    width: 260px;
+    height: 100px;
+    background-color: #707070;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.chgbg{
+    position: relative;
+    width: 500px;
+    height: 400px;
+    border: 2px solid #0f0;
+    left: 15%;
+    border-radius: 50%/50%;
+    background-color: #707070;
+    background:linear-gradient(45deg,white,pink, blue);
+    background: radial-gradient(50% 50%,white,pink,white,pink);
+    background: linear-gradient(45deg,pink,blue);
+	background: -webkit-radial-gradient(30% 30%,ellipse,white,gray,white,gray,pink,blue,red);
+	background: -ms-radial-gradient(30% 30%,ellipse,white,gray,white,gray,pink,blue,red);
+	background: -moz-radial-gradient(30% 30%,ellipse,white,gray,white,gray,pink,blue,red);
+}
+.list{
+    left: 15%;
+}
+ul{
+    /* list-style: square; */
+    list-style: url("../../Imgs/洛克王国.jfif");
+}
+
+ol{
+    list-style: upper-roman;
+}
