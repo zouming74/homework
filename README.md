@@ -32,5 +32,5 @@ git clone git@github.com:zouming74/homework.git
 [@zouming74](https://github.com/zouming74)
 
 ## License
-[MIT](LICENSE) © leonardo_z
+[MIT](LICENSE) © leonardo_z  
 ![Bower](https://img.shields.io/badge/license-MIT-green)
