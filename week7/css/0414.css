@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 80%;
+    height: 650px;
+    margin: 1px solid green;
+    margin: 0 auto;
+}
+h2{
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 10px 10px 5px darkgray;
+    /* 左 下 模糊程度 */
+}
+.box{
+    height: 500px;
+    border:  1px solid black;
+    margin-top: 6px;
+    overflow: hidden;
+}
+a{
+    font-size: 30px;
+    display: block;
+    text-decoration: none;
+}
+a:link{
+    color: black;
+}
+a:hover{
+    color: red;
+}
+a:active{
+    color: blue;
+    font-size: 24px;
+}
+a:visited{
+    color: aquamarine;
+}
+
+.box1 a{
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    text-decoration: none;
+    color: blue;
+    margin-left: 10%;
+    margin-top: 5px;
+    border: 2px solid #707070;
+    border-radius: 100%;
+    text-align: center;
+    background: linear-gradient(pink,orange);
+}
+.box1 a:hover{
+    background: linear-gradient(yellow,red);
+}
+.sd{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+    border: 2px solid green;
+    background: linear-gradient(blue ,yellow);
+    box-shadow: 20px 20px 10px orange;
+}
