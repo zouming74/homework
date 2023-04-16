@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鼠标点击提示框</title>
+    <style>
+        #div1{
+            width: 200px;
+            height: 30px;
+            background-color: darkgray;
+            border: 1px solid black;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 鼠标移入到点击框上显示，移除再不显示。
+    事件 -->
+    <!-- 事件：用户的操作 -->
+    <!-- display:none->block  -->
+   <input type="checkbox" onmouseover="div1.style.display='block';"
+   onmouseout="div1.style.display='none'"> 
+   <!-- 在低版本的火狐浏览器中，不能直接这样写。document.getElementById -->
+   <!-- 通过元素获取id -->
+   <!-- getElementById('div1').style.display -->
+   <div id="div1">
+    为了您的信息安全
+   </div>
+   <br>
+   <input type="button" onclick="alert('你好！')">
+   <br>
+   <input type="button" onmouseover="alert('hello')">
+   <br>
+   <input type="button" onmouseout="alert('goodbye')">
+</body>
+</html>

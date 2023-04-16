@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+    <style>
+        #div1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+    <script>
+        function toBig(){
+            getElementById('div1').style.width='500px';
+            getElementById('div1').style.height='500px';
+        }
+    </script>
+</head>
+<body>
+    <div id="div1" onmouseover="toBig()" onmouseout="getElementById('div1').style.width='200px';
+    getElementById('div1').style.height='200px';"></div>
+</body>
+</html>
