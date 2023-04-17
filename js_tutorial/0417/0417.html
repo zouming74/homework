@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" id = "11" href="../0417/change1.css">
+    <title>网页换肤</title>
+    <script>
+        function skin1(){
+            var oL = document.getElementById('11');
+            oL.href = "../0417/change1.css" ;
+        }
+        function skin2(){
+            var oL = document.getElementById('11');
+            oL.href = "../0417/change2.css" ;
+        }
+        function setText(){
+            var oText = document.getElementById('text1');
+            oText.value = '修改文字'; 
+        } 
+        function showHide(){
+            var oDiv = document.getElementById('div1');
+            if(oDiv.style.display == 'block')
+            {
+                oDiv.style.display = 'none';
+            }
+            else{
+                oDiv.style.display = 'block';
+            }
+        }
+        function toRed(){
+            var oDiv = document.getElementById('div2');
+            oDiv.className = 'box';
+        }
+        </script>
+        <style>
+            #div1{
+                width: 100px;
+                height: 200px;
+                background-color: aliceblue;
+                display: none;
+            }
+            #div2{
+                width: 100px;
+                height: 200px;
+                background-color: aliceblue;
+            }
+            .box{
+                width: 100px;
+                height: 200px;
+                background-color: red;
+            }
+        </style>
+</head>
+<body>
+   <h2>网页换肤</h2> 
+   <!-- function 函数名(){
+    代码
+   }
+   函数名() -->
+   <input type="button" value="皮肤1" onclick="skin1();">
+   <input type="button" value="皮肤2" onclick="skin2();">
+   <br>
+   <input type="text" id="text1">
+   <input type="button" value="改文字" onclick="setText();">
+   <br>
+   <!-- if 如果
+   判断
+   if(条件)
+   {
+    语句1
+   }
+   else
+   {
+    语句2
+   } -->
+
+   <h2>显示隐藏</h2>
+   <input type="button" value="显示隐藏" onclick="showHide();">
+   <div id="div1">
+
+   </div>
+   <h2>连接</h2>
+   <a href="javascript:alert('你好');">连接</a>
+
+   <br>
+   <h2>className</h2>
+   <input type="button" value="改变颜色" onclick="toRed();">
+   <div id="div2">
+
+   </div>
+</body>
+</html>
