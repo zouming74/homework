@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数传参等多个知识点</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+        h3{
+            text-align: center;
+        }
+        #div1{
+            width: 200px;
+            height: 300px;
+            background: red;
+        }
+        #div2{
+            width: 200px;
+            height: 300px;
+            background: red;
+        }
+        #div3{
+            width: 200px;
+            height: 300px;
+            border: 1px solid black;
+        }
+        .box{
+            width: 200px;
+            height: 300px;
+            background: red;
+        }
+    </style>
+    <script>
+        /*function toYellow(){
+            var oDiv = document.getElementById('div1');
+            oDiv['style'].background = 'yellow';
+        }
+        function toGreen(){
+            var oDiv = document.getElementById('div1');
+            oDiv.style.background = 'green';
+        }
+        function toBlue(){
+            var oDiv = document.getElementById('div1');
+            oDiv.style.background = 'blue';
+        }*/
+        function setColor(color){
+            var oDiv = document.getElementById('div1');
+            oDiv.style.background = color ;
+        }
+        function setStyle(name,value){
+            var oDiv = document.getElementById('div2');
+            oDiv['style'][name] = value;
+        }
+        function toRed(){
+            var oDiv = document.getElementById('div3');
+            oDiv.className = 'box';
+        }
+        function toGreen(){
+            var oDiv = document.getElementById('div3');
+            oDiv.style.background = 'green';
+        }
+    </script>
+</head>
+<body>
+   <h2>函数传参</h2> 
+   <input type="button" value="变黄" onclick="setColor('yellow')">
+   <input type="button" value="变绿" onclick="setColor('green')">
+   <input type="button" value="变蓝" onclick="setColor('blue')">
+   <div id="div1"></div>
+
+   <br>
+
+   <h2>div改变样式</h2>
+    <input type="button" value="变宽" onclick="setStyle('width','400px')">
+    <input type="button" value="变高" onclick="setStyle('height','500px')">
+    <input type="button" value="变绿" onclick="setStyle('background','green')">
+    <div id="div2"></div>
+
+    <br>
+    <h2>style</h2>
+    <p>style加样式是加在行间的</p>
+    <p>style取样式也是加在行间的</p>
+    <p>样式优先级：* 小于 标签 小于 class 小于 ID 小于 行间</p>
+    <h3>注意优先级</h3>
+    <input type="button" value="变红" onclick="toRed();">
+    <input type="button" value="变绿" onclick="toGreen();">
+    <div id="div3"></div>
+</body>
+</html>
