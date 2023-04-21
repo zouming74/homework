@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/homework1.css">
+    <title>意见反馈</title>
+</head>
+<body>
+    <h2>意见反馈</h2>
+    <div class="bar">
+        <input type="button" class="topbtn btn1" onclick="window.location.href='../homework1.html'"  value="首页">
+        <input type="button" class="topbtn btn2" onclick="dispCata();"value="分类">
+        <input type="button" class="topbtn btn3" value="我的最爱">
+        <div id="catalogs">
+            <a href="" id="cata1">全部</a>
+            <a href="" id="cata2">数理科学</a>
+            <a href="" id="cata3">人文素养</a>
+        </div>
+    </div>
+    <div class="container">
+        <input type="text" placeholder="请输入反馈意见" class="ipt">
+        <input type="button" value="提交" class="submit" onclick="submitDone();">
+    </div>
+</body>
+<script>
+    function submitDone(){
+        alert('提交成功');
+    }
+</script>
+</html>

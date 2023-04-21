@@ -5,11 +5,23 @@
 body{
     width: 80%;
     height: 650px;
-    border: 1px solid green;
     margin:0 auto ;
 }
 h2{
     text-align: center;
+    background-color: #733e1c;
+    /* margin: 43px auto 88px; */
+    width: 20em;
+    text-align: center;
+    color: #323232;
+    font-size: 4em;
+    font-family: 'Henny Penny', cursive;
+    text-shadow: 0px 0px 4px #FFFFFF;
+    padding: 14px 0px;
+    border-radius: 80px 80px 0px 0px;
+}
+h3{
+    text-align: left;
 }
 .toolbar{
     position: fixed;
@@ -52,3 +64,60 @@ h2{
 .toolbar-item-4:hover{
     background-position: -72px -184px;
 }
+
+.bar{
+    width: 1280px;
+    height: 45px;
+    background-color:#733e1c ;
+    position: relative;
+}
+.topbtn{
+    position: absolute;
+    width: auto;
+    height: auto;
+    border-radius: 10%;
+    font-size: 24px;
+    background-color: antiquewhite;
+}
+.btn1{
+    left: 20%;
+}
+.btn2{
+    left: 40%;
+}
+.btn3{
+    left: 60%;
+}
+#catalogs{
+    position: absolute;
+    left: 40%;
+    top: 45px;
+    background-color: antiquewhite;
+    display: none; 
+}
+#cata1{
+    display: block;
+}
+#cata2{
+    display: block;
+}
+#cata3{
+    display: block;
+}
+.submit{
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: beige;
+            left: 50%;
+            top: 25%;
+        }
+.ipt{
+            position: absolute;
+            width: 250px;
+            height: 35px;
+            background-color: antiquewhite;
+            font-size: 24px;
+            left: 40%;
+            top: 20%;
+        }
