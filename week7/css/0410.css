@@ -24,6 +24,7 @@ marquee{
     background-color: #707070;
     border-radius: 50%;
     overflow: hidden;
+    top:40%;
 }
 .chgbg{
     position: relative;
