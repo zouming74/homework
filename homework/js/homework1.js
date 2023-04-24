@@ -8,3 +8,6 @@ function dispCata(){
         oDiv.style.display = 'none';
     } 
 }
+function gotoTop(){
+    document.documentElement.scrollTop = 0;
+}
