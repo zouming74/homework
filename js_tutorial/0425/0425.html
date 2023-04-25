@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+       // window.onload = function (){
+        //var oBtn = document.getElementById('btn1');
+        //function abc(){
+            //alert('abc');
+        //}
+        //oBtn.onclick = abc();
+        //隐藏函数
+        //oBtn.onclick = function (){
+        //    alert('abc');
+        //}
+        //}
+        // 以上部分存在错误，但是要知道的是js是存在加载顺序的。
+        window.onload = function(){
+            var aDiv = document.getElementsByTagName('div');
+            // alert(aDiv.length);
+            // aDiv[0].style.backgroundColor = 'red';
+            for(var i=0;i<aDiv.length;i++){
+                aDiv[i].style.background = "red";
+            }
+        }
+    </script>
+    <style>
+        div{
+            width: 40px;
+            height: 40px;
+            border: 2px solid black;
+            float: left;
+        }
+    </style>
+    <title>提取行间事件等技术</title>
+</head>
+<body>
+    <h2>提取行间事件等技术</h2>
+    <input id="btn1" type="button" value="按钮">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+</body>
+</html>
