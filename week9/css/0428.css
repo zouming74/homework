@@ -1,0 +1,76 @@
+*{
+    padding: 0 ;
+    margin: 0;
+}
+
+body{
+    width: 80%;
+    height: 700px ;
+    margin: 0 auto;
+}
+h2{
+    text-align: center;
+}
+.container{
+    height: 500px;
+    font-size: 30px;
+}
+
+.container p:nth-of-type(2){
+    color: pink;
+    font-style: italic;
+}
+.container p:nth-child(3){
+    color: orange;
+    font-weight: bold;
+}
+.container p:nth-of-type(odd){
+    background: #eee;
+}
+.container p:nth-child(even){
+    color: purple;
+}
+
+/* ::before
+
+::after */
+
+#p1::after{
+    position: relative;
+    content: 'hot';
+    color: red;
+    font-size: 12px;
+    bottom: 30px;
+    left: -10px;
+}
+
+.container p:nth-of-type(2)::after{
+    position: relative;
+    content: 'hot';
+    top: -18px;
+    left: -10px;
+}
+
+.container p:nth-child(4)::before{
+    position: relative;
+    content: '>>>>';
+    color: blue;
+}
+
+.container p:nth-child(5)::before{
+    position: relative;
+    content: '*';
+    color: red;
+    top: -10px;
+}
+
+.container p:nth-of-type(14)::after{
+    position: relative;
+    content: attr(my-sex);
+    color: brown;
+    font-size: 12px;
+    top: -20px;
+    left: -10px;
+}
+
+
