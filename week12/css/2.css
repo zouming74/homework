@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width:80vw ;
+    height: 80vh;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+h2,h3,h4,h5,h6{
+    text-align: center;
+}
+
+h2{
+   font-size: 5vw; 
+}
+
+h3{
+    font-size: 16px;
+}
+
+h5{
+    color:orange;
+    font-size: 12pt;/*12pt=16px*/
+}
+
+h6{
+    color: blue;
+    font-size: 1em;
+}
+.h6{
+    color: brown;
+    font-size: 1rem;
+}
+
+.first1{
+    text-align: center;
+    font-size: 1em;
+}
+
+.second1{
+    color: brown;
+    text-align: center;
+    font-size: 0.5em;
+}
+
+.third1{
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+}
