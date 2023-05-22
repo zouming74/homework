@@ -29,8 +29,9 @@ git clone git@github.com:zouming74/homework.git
 - 作业：完成侧边栏的设计，包括返回顶部、联系方式、反馈和微信公众号。可以参考[侧边栏设计](/week6/0407.html)
 
 - 学习：由于半期考试要考javascript，我选择了这部[教程](https://www.bilibili.com/video/BV1Ys411F7Zc/?spm_id_from=333.1007.top_right_bar_window_custom_collection.content.click&vd_source=a8f9334621650c4b3a47e8215f46e8b1)来学习javascript。
+    - [javascript tutorial](/js_tutorial)
 
-- [javascript tutorial](/js_tutorial)
+- JavaScript中的[轮播技术](/week12/0522.html)
 
 ## Maintainers
 [@zouming74](https://github.com/zouming74)
