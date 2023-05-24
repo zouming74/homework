@@ -104,8 +104,6 @@ div:has( > [data-icon="2"]){
 div:has( > [data-icon="3"]){
 	background: linear-gradient(white,gray);
 }
-
-
 .menu{
 	position: fixed;
 	/* width: 50px;
