@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    background-position: center center;
+    background-size: cover;
+    background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80');
+}
+
+@font-face {
+    font-family: "slides";
+    src: url("../../fonts/newfont/fonts/raphaelicons-webfont.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container{
+    position: relative;
+    width: 70vw;
+    height: 70vh;
+    /* border: 1px solid #707070; */
+    /* margin-top: 10px; */
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+h2,p{
+    text-align: center;
+}
+.slide{
+    position: relative;
+    height: 20%;
+    background: linear-gradient(white,pink);
+    overflow: hidden;
+}
+.move{
+	position: relative;
+    top: 0;
+	height: 500%;
+	transition: all 1s ease-in;
+
+}
+.topbox{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: orange;
+    /* margin: 0 auto; */
+    /* -webkit-transform: ; */
+    left: 50%;
+    /* 可以移动 以中心为轴转动  */
+    transform: translate(-100px) translateY(-100px) rotate(45deg); 
+}
+/* 所有具有data-icon的元素 */
+[data-icon]::after{
+    position: absolute;
+    content: attr(data-icon);
+    width: 100%;
+    height: 100%;
+    font-family: class6;
+    font-size: 90px;
+    color: #fff;
+    color: blue;
+    text-align: center;
+
+
+    line-height: 200px;
+    vertical-align: middle;
+    transform: translateX(25px) translateY(25px) rotate(-45deg);
+
+}
+
+[data-icon="B"]{
+	background: linear-gradient(white,red);
+}
+[data-icon="U"]{
+	background: linear-gradient(white,blue);
+}
+[data-icon="1"]{
+	background: linear-gradient(white,green);
+}
+[data-icon="2"]{
+	background: linear-gradient(white,purple);
+}
+[data-icon="3"]{
+	background: linear-gradient(white,lightgray);
+}
+.slider:nth-of-type(2){
+	background: linear-gradient(white,lightblue);
+}
+div:has( > [data-icon="1"]){
+	background: linear-gradient(white,yellowgreen);
+}
+div:has( > [data-icon="2"]){
+	background: linear-gradient(white,purple);
+}
+div:has( > [data-icon="3"]){
+	background: linear-gradient(white,gray);
+}
+
+
+.menu{
+	position: fixed;
+	width: 50px;
+	height: 255px;
+	top: 100px;
+	left: 30px;
+/*	border: 1px solid #707070;*/
+}
+.menu .menuitem{
+	display: block;
+	height: 50px;
+	margin-top: 1px;
+	background: blue;
+	color: white;
+	font-size: 20px;
+/*	font-weight: bold;*/
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	vertical-align: middle;
+	border-radius: 100%;
+}
