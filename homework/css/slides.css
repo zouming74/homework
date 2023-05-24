@@ -38,7 +38,12 @@ h2,p{
     position: relative;
     height: 20%;
     background: linear-gradient(white,pink);
+    opacity: 0;
+    /* transition: all 1s; */
     overflow: hidden;
+}
+.slide.active{
+    opacity: 1;
 }
 .move{
 	position: relative;
@@ -113,6 +118,7 @@ div:has( > [data-icon="3"]){
 	bottom: 60px;
 	/* left: 30px; */
     align-items: center;
+    cursor: pointer;
 /*	border: 1px solid #707070;*/
 }
 .menu .menuitem{
@@ -129,4 +135,7 @@ div:has( > [data-icon="3"]){
 	line-height: 50px;
 	vertical-align: middle;
 	border-radius: 100%;
+}
+.red{
+    background-color: red;
 }
