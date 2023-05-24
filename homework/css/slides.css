@@ -22,7 +22,7 @@ body{
     font-style: normal;
 }
 
-.container{
+.container {
     position: relative;
     width: 70vw;
     height: 70vh;
@@ -30,27 +30,32 @@ body{
     /* margin-top: 10px; */
     overflow: hidden;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
 }
 h2,p{
     text-align: center;
 }
-.slide{
-    position: relative;
-    height: 20%;
-    background: linear-gradient(white,pink);
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(white, pink);
     opacity: 0;
     /* transition: all 1s; */
     overflow: hidden;
 }
-.slide.active{
+
+.slide.active {
     opacity: 1;
 }
-.move{
-	position: relative;
+.move {
+    position: relative;
     top: 0;
-	height: 500%;
-	transition: all 1s ease-in;
-
+    height: 100%;
+    width: 100%;
+    transition: all 1s ease-in;
+    display: flex;
 }
 .topbox{
     position: relative;
@@ -69,7 +74,7 @@ h2,p{
     content: attr(data-icon);
     width: 100%;
     height: 100%;
-    font-family: class6;
+    font-family: slides;
     font-size: 90px;
     color: #fff;
     color: blue;
@@ -82,60 +87,87 @@ h2,p{
 
 }
 
-[data-icon="B"]{
-	background: linear-gradient(white,red);
+[data-icon="B"] {
+    background: linear-gradient(white, red);
 }
-[data-icon="U"]{
-	background: linear-gradient(white,blue);
+
+[data-icon="U"] {
+    background: linear-gradient(white, blue);
 }
-[data-icon="1"]{
-	background: linear-gradient(white,green);
+
+[data-icon="1"] {
+    background: linear-gradient(white, green);
 }
-[data-icon="2"]{
-	background: linear-gradient(white,purple);
+
+[data-icon="2"] {
+    background: linear-gradient(white, purple);
 }
-[data-icon="3"]{
-	background: linear-gradient(white,lightgray);
+
+[data-icon="3"] {
+    background: linear-gradient(white, lightgray);
 }
-.slider:nth-of-type(2){
-	background: linear-gradient(white,lightblue);
-}
-div:has( > [data-icon="1"]){
-	background: linear-gradient(white,yellowgreen);
-}
-div:has( > [data-icon="2"]){
-	background: linear-gradient(white,purple);
-}
-div:has( > [data-icon="3"]){
-	background: linear-gradient(white,gray);
-}
-.menu{
-	position: fixed;
-	/* width: 50px;
-	height: 255px; */
+.menu {
+    position: fixed;
     width: 270px;
-    height: 50px; 
-	bottom: 60px;
-	/* left: 30px; */
+    height: 50px;
+    bottom: 60px;
     align-items: center;
     cursor: pointer;
-/*	border: 1px solid #707070;*/
 }
-.menu .menuitem{
-	display: inline-block;
+.menu .menuitem {
+    display: inline-block;
     width: 50px;
-	height: 50px;
-	margin-top: 1px;
-	background: blue;
-	color: white;
-	font-size: 20px;
-/*	font-weight: bold;*/
-	text-decoration: none;
-	text-align: center;
-	line-height: 50px;
-	vertical-align: middle;
-	border-radius: 100%;
+    height: 50px;
+    margin-top: 1px;
+    /* background: blue; */
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    border-radius: 100%;
 }
 .red{
     background-color: red;
+}
+
+.btn-left{
+	width: 30px;
+	height: 69px;
+	font-size: 30px;
+	color: white;
+	background-color:rgba(0,0,0,0.4);
+	line-height: 69px;
+	padding-left:5px;
+	z-index: 10;/*始终显示在图片的上层*/
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-60%);/*使按钮向上偏移居中对齐*/
+	cursor: pointer;
+	opacity: 1;/*平时隐藏*/
+}
+.container:hover #btn-left{
+	/*鼠标滑入，显示图标*/
+	opacity: 0;
+}
+
+.btn-right{
+	width: 26px;
+	height: 69px;
+	font-size: 30px;
+	color: white;
+	background-color:rgba(0,0,0,0.4);
+	line-height: 69px;
+	padding-left: 5px;
+	z-index: 10;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	cursor: pointer;
+	opacity: 1;
+	transform: translateY(-60%);
+}
+.container:hover #btn-right{
+	opacity: 0;
 }
