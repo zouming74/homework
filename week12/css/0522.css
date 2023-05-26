@@ -8,6 +8,17 @@
     font-weight: normal;
     font-style: normal;
 }
+@keyframes mymove{
+    0%{top: 0;}
+    13%{top: -100%;}
+    25%{top: -100%;}
+    33%{top: -200%;}
+    50%{top: -200%;}
+    58%{top: -300%;}
+    75%{top: -300%;}
+    83%{top: -400%;}
+    100%{top: -400%;}
+}
 body{
     width: 80%;
     height: 500px;
@@ -34,7 +45,9 @@ h2,p{
 	position: relative;
     top: 0;
 	height: 500%;
-	transition: all 1s ease-in;
+	transition: all 1s ease-in ;
+    animation: mymove 10s infinite 2s;
+    /* animation: mymove 10s infinite alternate linear; */
 
 }
 .topbox{
