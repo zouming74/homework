@@ -7,7 +7,7 @@ body{
     width:80vw ;
     height: 100vh;
     margin: 0 auto;
-    border: 1px solid red;
+    border: 0px solid red;
 }
 @keyframes myrotate{
     0%{transform: rotate(0deg);}
@@ -66,18 +66,23 @@ h6{
     height: 330px;
     top: 30px;
     left: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* border-radius: 100%; */
-    overflow: hidden;
+    /* overflow: hidden; */
+    background-color: brown;
+    border-radius: 5%;
 
 
 }
 
 .ani img{
+    position: absolute;
     width: 300px;
     height: 300px;
-    bottom: 30%;
     border-radius: 100%;
-    border: 1px solid red;
+    border: 1px solid black;
 
 
 }
@@ -90,11 +95,16 @@ audio{
 .pause{
     animation: myrotate 10s pause linear;
 }
-.btn{
+.btnp{
     position: absolute;
-    width: 30px;
-    height: 20px;
+    width: 0;
+    height: 0;
+    background-color: brown;
+    border-style: solid;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent black;
     bottom: 0;
-    left: 45%;
+    left: 15%;
 
 } 
+  
