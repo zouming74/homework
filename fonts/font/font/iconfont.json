@@ -1,0 +1,44 @@
+{
+  "id": "4056020",
+  "name": "图标",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "7594153",
+      "name": "24gf-pauseCircle",
+      "font_class": "24gf-pauseCircle",
+      "unicode": "ea81",
+      "unicode_decimal": 60033
+    },
+    {
+      "icon_id": "7594157",
+      "name": "24gf-playCircle",
+      "font_class": "24gf-playCircle",
+      "unicode": "ea82",
+      "unicode_decimal": 60034
+    },
+    {
+      "icon_id": "35360949",
+      "name": "open",
+      "font_class": "open",
+      "unicode": "e91e",
+      "unicode_decimal": 59678
+    },
+    {
+      "icon_id": "35360955",
+      "name": "notebook-2",
+      "font_class": "notebook-2",
+      "unicode": "e91f",
+      "unicode_decimal": 59679
+    },
+    {
+      "icon_id": "35360975",
+      "name": "phone",
+      "font_class": "phone",
+      "unicode": "e920",
+      "unicode_decimal": 59680
+    }
+  ]
+}
