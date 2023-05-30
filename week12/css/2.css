@@ -9,6 +9,14 @@ body{
     margin: 0 auto;
     border: 0px solid red;
 }
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.woff2?t=1685438041212') format('woff2'),
+       url('iconfont.woff?t=1685438041212') format('woff'),
+       url('iconfont.ttf?t=1685438041212') format('truetype');
+       font-weight: normal;
+       font-style: normal;
+}
 @keyframes myrotate{
     0%{transform: rotate(0deg);}
     25%{transform: rotate(90deg);}
@@ -97,12 +105,13 @@ audio{
 }
 .btnp{
     position: absolute;
-    width: 0;
-    height: 0;
-    background-color: brown;
-    border-style: solid;
+    width: 50px;
+    height: 50px;
+    /* background-color: brown; */
+    /* border-style: solid;
     border-width: 10px 0 10px 15px;
-    border-color: transparent transparent transparent black;
+    border-color: transparent transparent transparent black; */
+    content: "&#xea81";
     bottom: 0;
     left: 15%;
 
