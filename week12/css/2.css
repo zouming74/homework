@@ -10,13 +10,13 @@ body{
     border: 0px solid red;
 }
 @font-face {
-  font-family: 'iconfont';
-  src: url('iconfont.woff2?t=1685438041212') format('woff2'),
-       url('iconfont.woff?t=1685438041212') format('woff'),
-       url('iconfont.ttf?t=1685438041212') format('truetype');
-       font-weight: normal;
-       font-style: normal;
-}
+    font-family: 'iconfont';
+    src: url('../../fonts/font/font/iconfont.woff2?t=1685439160214') format('woff2'),
+         url('../../fonts/font/font/iconfont.woff?t=1685439160214') format('woff'),
+         url('../../fonts/font/font/iconfont.ttf?t=1685439160214') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 @keyframes myrotate{
     0%{transform: rotate(0deg);}
     25%{transform: rotate(90deg);}
@@ -111,7 +111,7 @@ audio{
     /* border-style: solid;
     border-width: 10px 0 10px 15px;
     border-color: transparent transparent transparent black; */
-    content: "&#xea81";
+    content: "\ea81";
     bottom: 0;
     left: 15%;
 
