@@ -9,15 +9,15 @@
     font-style: normal;
 }
 @keyframes mymove{
-    0%{top: 0;}
-    13%{top: -100%;}
-    25%{top: -100%;}
-    33%{top: -200%;}
-    50%{top: -200%;}
-    58%{top: -300%;}
-    75%{top: -300%;}
-    83%{top: -400%;}
-    100%{top: -400%;}
+    0%{left: 0;}
+    13%{left: -100%;}
+    25%{left: -100%;}
+    33%{left: -200%;}
+    50%{left: -200%;}
+    58%{left: -300%;}
+    75%{left: -300%;}
+    83%{left: -400%;}
+    100%{left: -400%;}
 }
 body{
     width: 80%;
@@ -36,8 +36,9 @@ h2,p{
     overflow: hidden;
 }
 .slide{
-    position: relative;
+    /* position: relative; */
     height: 20%;
+    z-index: 1;
     background: linear-gradient(white,pink);
     overflow: hidden;
 }
@@ -60,6 +61,36 @@ h2,p{
     left: 50%;
     /* 可以移动 以中心为轴转动  */
     transform: translate(-100px) translateY(-100px) rotate(45deg); 
+}
+.p1{
+    position: relative;
+    top: -500px;
+    left: 100%;
+    
+}
+.p2{
+    position: relative;
+    top: -1000px;
+    left: 200%;
+    
+}
+.p3{
+    position: relative;
+    top: -1500px;
+    left: 300%;
+    
+}
+.p4{
+    position: relative;
+    top: -2000px;
+    left: 400%;
+    
+}
+.p5{
+    position: relative;
+    top: -2500px;
+    left: 500%;
+    
 }
 /* 所有具有data-icon的元素 */
 [data-icon]::after{
@@ -111,23 +142,25 @@ div:has( > [data-icon="3"]){
 
 .menu{
 	position: fixed;
-	width: 50px;
-	height: 255px;
-	top: 100px;
-	left: 30px;
+	top: 465px;
+	left: 1165px;
 /*	border: 1px solid #707070;*/
+	height: 50px;
+	width: 270px;
+	z-index: 9999;
 }
 .menu .menuitem{
-	display: block;
-	height: 50px;
+	display: linein-block;
+	width: 50px;
+    height: 50px;
 	margin-top: 1px;
 	background: blue;
 	color: white;
 	font-size: 20px;
 /*	font-weight: bold;*/
-	text-decoration: none;
-	text-align: center;
-	line-height: 50px;
-	vertical-align: middle;
-	border-radius: 100%;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+    border-radius: 100%;
 }

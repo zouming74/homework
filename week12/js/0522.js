@@ -9,7 +9,8 @@ function move(arg){
 	aele[arg].style.backgroundColor = "red";
 
 	let aMove = document.getElementsByClassName("move");
-	aMove[0].style.top = - arg * 100 + "%";  ///运算完后是100%；
+	// aMove[0].style.top = - arg * 100 + "%";  ///运算完后是100%；
+	aMove[0].style.left = - arg * 100 + "%";  ///运算完后是100%；
 }
 function clear(aelement){
 	for (var i = 0;i < aelement.length; i++) {

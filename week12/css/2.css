@@ -105,13 +105,13 @@ audio{
 }
 .btnp{
     position: absolute;
-    width: 50px;
-    height: 50px;
-    /* background-color: brown; */
-    /* border-style: solid;
+    width: 0;
+    height: 0;
+    background-color: brown; 
+    border-style: solid;
     border-width: 10px 0 10px 15px;
-    border-color: transparent transparent transparent black; */
-    content: "\ea81";
+    border-color: transparent transparent transparent black;
+    /* content: "\ea81"; */
     bottom: 0;
     left: 15%;
 
