@@ -63,7 +63,7 @@ window.onload = function() {
         clearInterval(timer);
         timer = setInterval(function() {
             rightBtn.onclick();
-        }, 6000);
+        }, 60000);
     }
 
     container.onmouseleave = function() {
