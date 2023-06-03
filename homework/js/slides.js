@@ -65,11 +65,31 @@ window.onload = function() {
             rightBtn.onclick();
         }, 60000);
     }
-
     container.onmouseleave = function() {
         clearInterval(timer);
         timer = setInterval(function() {
             rightBtn.onclick();
         }, 3000);
     }
+    // cd player
+                document.querySelector('.btnp').addEventListener('click', function() {
+                var cd = document.querySelector('.cd');
+                var audio = document.querySelector('audio');
+              
+                if (audio.paused) {
+                    audio.play();
+                    cd.classList.remove('pause');
+                    cd.classList.add('infinite');
+                } else {
+                    audio.pause();
+                    cd.classList.remove('infinite');
+                    cd.classList.add('pause');
+            
+              }
+              audio.addEventListener('ended', function() {
+                cd.classList.remove("infinite");
+                cd.classList.add('pause');
+              });
+            }
+            );
 }

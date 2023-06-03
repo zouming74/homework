@@ -49,6 +49,10 @@ h2,p{
     position: relative;
     z-index: 2;
 }
+.slide button{
+    position: relative;
+    z-index: 3;
+}
 
 .slide ul{
     text-align: center;
@@ -179,3 +183,59 @@ h2,p{
 .btn-right:hover{
 	opacity: 1;
 }
+
+/* cd player */
+@keyframes myrotate{
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(90deg);}
+    50%{transform: rotate(180deg);}
+    75%{transform: rotate(270deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.ani{
+    position: relative;
+    width: 330px;
+    height: 330px;
+    top: 30px;
+    left: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 100%; */
+    /* overflow: hidden; */
+    background-color: brown;
+    border-radius: 5%;
+
+
+}
+
+.ani img{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border: 1px solid black;
+
+
+}
+audio{
+    display: none;
+}
+.infinite{
+    animation: myrotate 10s infinite linear;
+}
+.pause{
+    animation: myrotate 10s pause linear;
+}
+.btnp{
+    width: 0;
+    height: 0;
+    background-color: brown; 
+    border-style: solid;
+    border-width: 10px 0 10px 15px;
+    border-color: transparent transparent transparent black;
+    top: 47%;
+    right: 24%;
+
+} 
