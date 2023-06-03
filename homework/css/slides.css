@@ -45,6 +45,11 @@ h2,p{
     /* transition: all 1s; */
     overflow: hidden;
 }
+.slide a {
+    position: relative;
+    z-index: 2;
+}
+
 .slide ul{
     text-align: center;
 }
