@@ -26,7 +26,6 @@ body{
     position: relative;
     width: 980px;
     height: 540px;
-    /* border: 1px solid #707070; */
     margin: 100px auto;
     overflow: hidden;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -37,9 +36,10 @@ h2,p{
     text-align: center;
 }
 .slide {
+    /* position: absolute; */
     width: 980px;
     height: 540px;
-    background: linear-gradient(white, pink);
+    background: linear-gradient(white, pink);    /* transition: all 1s; */
     overflow: hidden;
 }
 .slide a {
@@ -59,8 +59,8 @@ h2,p{
     position: absolute;
     top: 0;
     left: 0;
-    height: 4900px;
-    width: 540px;
+    width: 4900px;
+    height: 540px;
     transition: all 1s ease-in;
     display: flex;
 }
