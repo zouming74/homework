@@ -30,8 +30,12 @@ window.onload = function() {
     // 只显示一个slide
     function mov() {
         clearClass();
-        slides[index].className = "slide active";
         menuitems[index].className = "menuitem red";
+         move.style.left = -index*980 + "px";
+    }
+    function bound(){
+        clearClass();
+        menuitems[curr].className = "menuitem red";
     }
 
     // 向右切换
@@ -47,7 +51,8 @@ window.onload = function() {
             curr = 0;
             move.style.left = "0px";
         }
-        mov();
+        // mov();
+        bound();
     }
 
     // 向左切换
@@ -63,7 +68,8 @@ window.onload = function() {
             curr = slides.length -1;
             move.style.left = "-3920px"
         }
-        mov();
+        // mov();
+        bound();
     }
 
     // 定时器，实现轮播
