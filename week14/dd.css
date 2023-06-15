@@ -1,0 +1,30 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	width: 90vw;
+	height: 90vh;
+	border: 2px dotted gray;
+	margin: 20px auto;
+}
+h2{
+	text-align: center;
+}
+video{
+	height: 200px;
+	width: 200px;
+}
+.demo{
+	position: relative;
+	width: 14vw;
+	height: 28vh;
+	border: 1vw solid gray;
+	left: 20vw;	
+	margin-top: 40px;
+}
+.demo img{
+	width: 100%;
+	height: 100%;
+    filter: opacity(30%);
+}
