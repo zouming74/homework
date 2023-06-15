@@ -12,6 +12,19 @@ h3{
     font-size: 2vw;
     color: #40E0D0;
 }
+@font-face {
+  font-family: 'football';
+  src: url('../../fonts/football/iconfont.woff2?t=1686819154444') format('woff2'),
+       url('../../fonts/football/iconfont.woff?t=1686819154444') format('woff'),
+       url('../../fonts/football/iconfont.ttf?t=1686819154444') format('truetype');
+}
+.football {
+  font-family: "football";
+  font-size: 40px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 body{
     height: 90vh;
     width: 90vw;
@@ -231,13 +244,107 @@ body{
 }
 
 .info{
-    width: 400px;
+    position: absolute;
+    width: 599px;
     height: 400px;
     /* border: 1px solid #707070; */
+    text-align: center;
 }
-.info p{
-    bottom: 20px;
+.page .info p{
+    margin-top: 10px;
 }
+
+.more1{
+    position: absolute;
+    top: 210px;
+    left: 40px;
+}
+.more2{
+    position: absolute;
+    top: 210px;
+    left: 220px;
+}
+.more3{
+    position: absolute;
+    top: 210px;
+    left: 420px;
+}
+
+.more4{
+    position: absolute;
+    top: 460px;
+    left: 40px;
+}
+.game img{
+    width: 200px;
+    height: 120px;
+    position: absolute;
+    opacity: 1;
+}
+.game img:hover{
+    opacity: 0;
+}
+.game a{
+    width: 200px;
+    height: 120px;
+}
+.game1{
+    left: 40px;
+    top: 40px;
+}
+.game2{
+    right: 40px;
+    top: 40px;
+}
+.game3{
+    left: 40px;
+    top: 220px;
+}
+.game4{
+    right: 40px;
+    top: 220px;
+}
+.game5{
+    left: 40px;
+    top: 420px;
+}
+.game6{
+    right: 40px;
+    top: 420px;
+}
+.tag{
+    opacity: 0;
+    position: absolute;
+}
+.tag:hover{
+    opacity: 1;
+}
+.tag1{
+    left: 40px;
+    top: 40px;
+}
+.tag2{
+    right: 40px;
+    top: 40px;
+}
+.tag3{
+    left: 40px;
+    top: 220px;
+}
+.tag4{
+    right: 40px;
+    top: 220px;
+}
+.tag5{
+    left: 40px;
+    top: 420px;
+}
+.tag6{
+    right: 40px;
+    top: 420px;
+}
+
+
 
 
 
