@@ -1,0 +1,44 @@
+{
+  "id": "4124459",
+  "name": "football",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "706797",
+      "name": "足球",
+      "font_class": "zuqiu-copy",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "1385585",
+      "name": "足球场",
+      "font_class": "zuqiuchang",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "5169505",
+      "name": "足球",
+      "font_class": "zuqiu",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "6027503",
+      "name": "右箭头",
+      "font_class": "youjiantou",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "18878499",
+      "name": "足球场",
+      "font_class": "zuqiuchang1",
+      "unicode": "e6c1",
+      "unicode_decimal": 59073
+    }
+  ]
+}
