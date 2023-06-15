@@ -33,6 +33,8 @@ git clone git@github.com:zouming74/homework.git
 
 - JavaScript中的[轮播技术](/week12/0522.html)
 
+- 期末大作业
+
 ## Maintainers
 [@zouming74](https://github.com/zouming74)
 
