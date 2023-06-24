@@ -10,7 +10,7 @@ var indicator_container;
 
 var slider_item_width;
 var curIndex = 0;
-
+//animate(element, target): 该函数用于动画滑动元素。它根据目标位置和当前位置之间的差值，计算出步进值和时间间隔，然后使用定时器逐步改变元素的left值，实现平滑滑动效果。
 window.onload = function() {
     initElement();
     initEvent();
