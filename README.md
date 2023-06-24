@@ -7,6 +7,7 @@
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [html css js 学习](#html-css-js-学习)
+- [Resources](#resources)
 - [Maintainers](#maintainers)
 - [License](#license)
 ## Install 
@@ -33,7 +34,27 @@ git clone git@github.com:zouming74/homework.git
 
 - JavaScript中的[轮播技术](/week12/0522.html)
 
-- 期末大作业
+- 期末大作业[iMusic](/final/index.html)
+  实际上，制作一个可以播放各种流行的或是经典的歌曲的web是比较困难的。在制作这个网站的时候，认识到了一些框架，但是由于课程要求没有使用。
+
+  通过这个课程，我认为学着做一个网站应该是像一个网站。打开浏览器，找个和你同种目的作用的网站，看看你的网站是否也是想实际上的网站。如果制作的网站和实际相差非常大，我觉得学习的东西就没有实践性了。
+
+  
+写一个web是非常困难的，一个用户从电脑访问交互，背后的技术都值得学习。这门课程也仅仅是个入门课程，还有很多地方需要学习。
+
+## Resources
+这里我想分享一下我用到过或者学习过的仓库
+- [50个前端小项目](https://github.com/bradtraversy/50projects50days)
+
+- [前端学习仓库](https://github.com/qianguyihao/Web)
+
+我觉得挺重要的框架，jQuery bootstrap 这些都是比较基础的框架(虽然我没学习过，但是github上面很多简单的项目都在用)
+
+一些主流框架
+- [Vue](https://github.com/vuejs/vue)
+- [node.js](https://nodejs.org/en)
+
+>以上框架我都没有学习过，只是认为很重要。哈哈哈哈
 
 ## Maintainers
 [@zouming74](https://github.com/zouming74)
